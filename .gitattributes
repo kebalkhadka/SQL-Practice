@@ -1,0 +1,9 @@
+# Treat all .sql files as text for Git
+*.sql text
+
+# Make GitHub recognize SQL files correctly for language stats
+*.sql linguist-language=SQL
+*.sql linguist-detectable=true
+
+# Optional: handle line endings automatically (Windows vs Linux)
+*.sql eol=lf
