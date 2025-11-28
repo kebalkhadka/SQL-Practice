@@ -14,7 +14,7 @@ group by p.patient_id, p.full_name
 order by total_sales desc
 limit 3;
 
--- List all patients along with the medicines prescribed to them in the last month.
+-- List all patients along with the medicines prescribed to them in the last 6  month.
 
 select 
 p.patient_id,p.full_name,pr.appointment_id,a.appointment_date,
