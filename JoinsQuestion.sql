@@ -85,7 +85,8 @@ from patients;
  d.doctor_id = a.doctor_id
  and a.status = 'Cancelled'
 where a.appointment_id is null;
--- Here we can even go with join as we use condition != 'Cancelled' But if a same doctor id has 2 appointemnt where one is fail and other is complted so in this case this wil fail as it will include this doctor  so we go for left join with is null
+-- Here we did not use inner join as we use condition != 'Cancelled' But if a same doctor id has 2 appointemnt where one is for failed
+-- and other is completed so in this case this wil fail as it will include this doctor also   so we go for left join with is null
  
  
  
