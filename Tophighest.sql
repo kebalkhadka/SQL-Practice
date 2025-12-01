@@ -26,3 +26,14 @@ appointments a on p.patient_id = a.patient_id
 left join 
 prescriptions pr on pr.appointment_id = a.appointment_id
 where a.appointment_date >= date_sub(curdate(),interval 6 month);
+
+-- Write a query to find patients who have visited doctors of at least 2 different specialties.
+
+select p.patient_id,p.full_name
+ from patients p
+join 
+appointments a on p.patient_id = a.patient_id
+join
+doctors d  on a.doctor_id = d.doctor_id
+group by patient_id,p.full_name
+having count(distinct d.specialty)>=2;
