@@ -1,6 +1,6 @@
 -- Pracrtice Questions 
 
--- Select all patients
+-- Select all patients from table
 select * from patients;
 
 -- Retrieve all doctors with specialty = 'Cardiology'.
