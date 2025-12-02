@@ -82,14 +82,6 @@ VALUES
 (5, 4, 4, '2024-02-05 11:00:00', 'Completed'),
 (6, 5, 5, '2024-02-20 16:30:00', 'Completed');
 
--- INSERT DATA FOR Prescriptions
-INSERT INTO Prescriptions (prescription_id, appointment_id, medicine_name, dosage, duration_days)
-VALUES
-(1, 1, 'Aspirin', '75mg', 30),
-(2, 1, 'Atorvastatin', '10mg', 60),
-(3, 2, 'Metformin', '500mg', 90),
-(4, 5, 'Ibuprofen', '400mg', 10),
-(5, 6, 'Vitamin B12', '500mcg', 45);
 
 --  insert Data for prescription
 INSERT INTO Prescriptions (prescription_id, appointment_id, medicine_name, dosage, duration_days)
